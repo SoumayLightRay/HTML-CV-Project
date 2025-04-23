@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        :root {
+          --bg-color: #f4f4f4;
+          --text-color: #333;
+          --card-bg: #fff;
+          --heading-color: #000;
+          --link-color: #007acc;
+        }
+      
+        /* Dark Theme */
+        .theme-dark {
+          --bg-color: #121212;
+          --text-color: #eee;
+          --card-bg: #1e1e1e;
+          --heading-color: #ffffff;
+          --link-color: #66d9ef;
+        }
+      
+        /* Blue Theme */
+        .theme-blue {
+          --bg-color: #e0f7fa;
+          --text-color: #004d40;
+          --card-bg: #ffffff;
+          --heading-color: #006064;
+          --link-color: #007acc;
+        }
+      
+        /* Warm Theme */
+        .theme-warm {
+          --bg-color: #fff8f0;
+          --text-color: #4e342e;
+          --card-bg: #fff3e0;
+          --heading-color: #6d4c41;
+          --link-color: #e64a19;
+        }
+      
+        body {
+          font-family: 'Segoe UI', sans-serif;
+          background-color: var(--bg-color);
+          color: var(--text-color);
+          padding: 2rem;
+          transition: background-color 0.3s, color 0.3s;
+        }
+      
+        section {
+          background-color: var(--card-bg);
+          border-radius: 10px;
+          padding: 1.5rem;
+          margin-bottom: 1rem;
+          box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+        }
+      
+        h1, h2, h3 {
+          color: var(--heading-color);
+        }
+      
+        a {
+          color: var(--link-color);
+        }
+      
+        .theme-switcher {
+          margin-bottom: 1rem;
+        }
+        
+        .container {
+            padding: 1rem;
+        }       
+
+
+        /* Responsive adjustments */
+body {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+header, section, article {
+  width: 100%;
+}
+
+address {
+  font-style: normal;
+  font-size: 0.95rem;
+}
+
+.theme-switcher {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  background: var(--card-bg);
+  padding: 0.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  z-index: 1000;
+}
+
+/* Make font and layout adapt on small screens */
+@media (max-width: 600px) {
+  body {
+    padding: 0.5rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2, h3 {
+    font-size: 1.2rem;
+  }
+
+  section {
+    padding: 1rem;
+  }
+
+  .theme-switcher {
+    position: static;
+    margin-bottom: 1rem;
+  }
+
+  address {
+    font-size: 0.85rem;
+    line-height: 1.4;
+  }
+
+  p, li {
+    font-size: 0.95rem;
+  }
+
+  ul {
+    padding-left: 1.2rem;
+
+}}
+
+      </style>
+      
+      
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Soumay Chugh - Frontend Developer</title>
+
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Soumay Chugh - Junior Frontend Developer Resume">
+  <meta name="keywords" content="Frontend Developer, HTML Resume, Junior Developer, Soumay Chugh">
+  <meta name="author" content="Soumay Chugh">
+
+  <!-- Open Graph Tags -->
+  <meta property="og:title" content="Soumay Chugh - Frontend Developer Resume">
+  <meta property="og:description" content="Frontend Developer Resume showcasing education, skills, and experience.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://your-github-username.github.io/cv-resume">
+  <meta property="og:image" content="https://your-website.com/preview-image.png">
+
+  <!-- Favicon -->
+  <link rel="icon" href="cv16.png" sizes="16x16" type="image/png">
+  <link rel="icon" href="cv32.png" sizes="32x32" type="image/png">
+
+  </head>
+<body>
+    <div class="theme-switcher">
+    <label for="themeSelect" aria-label="Select a theme">🎨 Choose Theme:</label>
+    <select id="themeSelect" aria-label="Theme selector for choosing different page themes">
+      <option value="">Light</option>
+      <option value="theme-dark">Dark</option>
+      <option value="theme-blue">Blue</option>
+      <option value="theme-warm">Warm</option>
+    </select>
+</div>
+
+
+    <div class="container">
+    <header>
+      <h1>Soumay Chugh</h1>
+      <h2>Junior Frontend Developer</h2>
+      <address>
+        123 Your Street, Your City, ST 12345<br>
+        (123) 456-7890<br>
+        <a href="mailto:no_reply@example.com">no_reply@example.com</a>
+        <span style="display:block; margin-top: 1rem;"></span> <!-- Adds space after the email -->
+        </address>
+    </header>
+  
+    <section>
+      <h3>Skills</h3>
+      <p>HTML, CSS, JavaScript, Accessibility, Figma to Design, Responsive Web Design, Technical Writing, Presentation</p>
+    </section>
+  
+    <section>
+      <h3>Education</h3>
+      <p><strong>School Name, Location – Degree</strong><br>Month 20xx to Month 20xx</p>
+      <ul>
+        <li>List of exciting things you did at university</li>
+      </ul>
+    </section>
+  
+    <section>
+      <h3>Experience</h3>
+  
+      <article>
+        <h4>Company Name, Location – Job Title</h4>
+        <p>Month 20xx to Month 20xx</p>
+        <ul>
+          <li>List of achievements</li>
+          <li>List of achievements</li>
+          <li>List of achievements</li>
+        </ul>
+        <p><strong>Skills:</strong> Skills used or gained at this company</p>
+      </article>
+  
+      <article>
+        <h4>Company Name, Location – Job Title</h4>
+        <p>Month 20xx to Month 20xx</p>
+        <ul>
+          <li>List of achievements</li>
+          <li>List of achievements</li>
+          <li>List of achievements</li>
+        </ul>
+        <p><strong>Skills:</strong> Skills used or gained at this company</p>
+      </article>
+    </section>
+  
+    <section>
+      <h3></h3>
+      <p><a href="#">LinkedIn</a>, <a href="#">GitHub</a> profile links</p>
+    </section>
+    </div>
+
+    <script>
+        const themeSelect = document.getElementById("themeSelect");
+      
+        themeSelect.addEventListener("change", function () {
+          document.body.className = this.value;
+        });
+      </script>
+      
+  </body>
+  
+  
+  
+</html>
