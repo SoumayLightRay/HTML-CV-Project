@@ -1,0 +1,21 @@
+# Node or Python related folders (if you ever add automation/scripts)
+node_modules/
+__pycache__/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# VS Code settings (optional)
+.vscode/
+
+# Logs and temporary files
+*.log
+*.tmp
+
+# Backup files
+*.bak
+*.swp
+
+# Don't ignore images used in your site (keep favicons etc.)
+# So no *.png or /assets/ unless unused
